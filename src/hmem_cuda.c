@@ -227,6 +227,12 @@ CUresult ofi_cuPointerGetAttribute(void *data, CUpointer_attribute attribute,
 	return cuda_ops.cuPointerGetAttribute(data, attribute, ptr);
 }
 
+CUresult ofi_cuPointerSetAttribute(const void *value, CUpointer_attribute attribute,
+				   CUdeviceptr ptr)
+{
+	return cuda_ops.cuPointerSetAttribute(value, attribute, ptr);
+}
+
 CUresult ofi_cuPointerGetAttributes(unsigned int num_attributes,
 				    CUpointer_attribute *attributes,
 				    void **data, CUdeviceptr ptr)

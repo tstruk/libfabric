@@ -62,6 +62,8 @@ CUresult ofi_cuGetErrorName(CUresult error, const char** pStr);
 CUresult ofi_cuGetErrorString(CUresult error, const char** pStr);
 CUresult ofi_cuPointerGetAttribute(void *data, CUpointer_attribute attribute,
 				   CUdeviceptr ptr);
+CUresult ofi_cuPointerSetAttribute(const void *value, CUpointer_attribute attribute,
+				   CUdeviceptr ptr);
 CUresult ofi_cuPointerGetAttributes(unsigned int num_attributes,
 				    CUpointer_attribute *attributes,
 				    void **data, CUdeviceptr ptr);
